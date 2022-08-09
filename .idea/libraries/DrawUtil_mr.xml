@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="DrawUtil.mr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/DrawUtil.mr.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/DrawUtil.mr.jar!/doc" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
