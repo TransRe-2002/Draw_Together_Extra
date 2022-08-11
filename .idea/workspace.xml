@@ -5,44 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3d8bc2-ed60-47a6-9fdc-44bc12811c27" name="变更" comment="null">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Draw_Together_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mr/draw/PictureWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/1像素线条.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/2像素线条.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/4像素线条.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/保存.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/前景色.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/展开.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/形状.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/橡皮.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/清除.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/画笔.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/背景色.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/隐藏.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icon/鼠标橡皮.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/小猴.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/机器猫.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/猪头.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/美人鱼.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/picture/船.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mr/draw/PictureWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mr/draw/PictureWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/transen5/IdeaProjects/Draw_Together/src/img/picture",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "工件",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/transen5/IdeaProjects/Draw_Together/src/img/picture&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;工件&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/img/picture" />
@@ -134,7 +99,8 @@
       <updated>1660021068361</updated>
       <workItem from="1660021070666" duration="21795000" />
       <workItem from="1660100944094" duration="12016000" />
-      <workItem from="1660183941942" duration="17100000" />
+      <workItem from="1660183941942" duration="19403000" />
+      <workItem from="1660227888067" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="null">
       <created>1660044468131</created>
@@ -143,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660044468131</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="null">
+      <created>1660225533126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660225533126</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -73,8 +73,8 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
     private JMenuItem saveMenuItem;             //保存菜单
     private JMenuItem shuiyinMenuItem;          //水印菜单
     private String shuiyin = "";                //水印字符内容
-    private PictureWindow picWindow;            //
-    private JButton showPicButton;
+    private PictureWindow picWindow;            // 简笔画展示窗体
+    private JButton showPicButton;              // 展开简笔画按钮
 
     /**
      * 构造方法
@@ -102,8 +102,8 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
 
         toolBar = new JToolBar();               //初始化工具栏
         getContentPane().add(toolBar,BorderLayout.NORTH);//工具栏添加到窗体最上边的位置
-        showPicButton = new JButton("展开简笔画");
-        toolBar.add(showPicButton);
+        showPicButton = new JButton("展开简笔画");// 初始化按钮对象，并添加文本内容
+        toolBar.add(showPicButton);             // 工具栏添加按钮
         saveButton = new JButton("保存");   //初始化按钮对象，并添加文本内容
         toolBar.add(saveButton);                //工具栏添加按钮
         toolBar.addSeparator();                 //添加分割条
@@ -170,7 +170,7 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
         eraserMenuItem = new JMenuItem("橡皮"); //初始化菜单项对象，并添加文本内容
         editMenu.add(eraserMenuItem);               //菜单添加菜单项
 
-        //
+        // 创建简笔画展示面板，并将本类当作它的父窗体
         picWindow = new PictureWindow(DrawPictureFrame.this);
     }   // init()结束
 
@@ -548,32 +548,37 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
             }// actionPerformed()结束
         });// shuiyinMenuItem.addActionListener()结束
 
-        showPicButton.addActionListener(new ActionListener()
+        showPicButton.addActionListener(new ActionListener()// 展示简笔画按钮添加动作监听
         {
             @Override
-            public void actionPerformed(ActionEvent e)
+            public void actionPerformed(ActionEvent e)// 单击时
             {
-                boolean isVisible = picWindow.isVisible();
-                if (isVisible)
+                boolean isVisible = picWindow.isVisible();// 获取简笔画展示窗体可见状态
+                if (isVisible)// 获取简笔画展示窗体可见状态
                 {
-                    showPicButton.setText("展开简笔画");
-                    picWindow.setVisible(false);
+                    showPicButton.setText("展开简笔画");// 修改按钮的文本
+                    picWindow.setVisible(false);// 隐藏简笔画展示窗体
                 }
-                else
+                else// 如果是隐藏的
                 {
-                    showPicButton.setText("隐藏简笔画");
+                    showPicButton.setText("隐藏简笔画");// 修改按钮的文本
+                    // 重新指定简笔画展示窗体的显示位置
+                    // 横坐标 = 主窗体横坐标 - 简笔画窗体宽度 - 5
+                    // 纵坐标 = 主窗体纵坐标
                     picWindow.setLocation(getX() - picWindow.getWidth() - 5, getY());
-                    picWindow.setVisible(true);
-                }
-            }
-        });
+                    picWindow.setVisible(true);// 简笔画展示窗体可见
+                } // else结束
+            }// actionPerformed()结束
+        });// showPicButton.addActionListener()结束
     } //addListener()结束
 
-
+    /**
+     * 恢复展开简笔画按钮的文本内容，此方法供简笔画面板的“隐藏”按钮调用。
+     */
     public void initShowPicButton()
     {
-        showPicButton.setText("展开简笔画");
-    }
+        showPicButton.setText("展开简笔画");// 修改按钮的文本
+    }//initShowPicButton()结束
     /**
      * 添加水印
      */
