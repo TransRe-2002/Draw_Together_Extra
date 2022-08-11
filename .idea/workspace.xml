@@ -4,17 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b3d8bc2-ed60-47a6-9fdc-44bc12811c27" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/DrawUtil_mr.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Draw_Together.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/DrawUtil.mr.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureCanvas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureFrame.java" afterDir="false" />
+    <list default="true" id="2b3d8bc2-ed60-47a6-9fdc-44bc12811c27" name="变更" comment="null">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Draw_Together_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/mr/draw/PictureWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/1像素线条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/2像素线条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/4像素线条.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/保存.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/前景色.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/展开.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/形状.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/橡皮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/清除.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/画笔.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/背景色.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/隐藏.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/icon/鼠标橡皮.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/小猴.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/机器猫.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/猪头.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/美人鱼.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/picture/船.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mr/draw/DrawPictureFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +61,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,12 +80,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/transen5/IdeaProjects/Draw_Together/lib/DrawUtil.mr.jar",
+    "last_opened_file_path": "/home/transen5/IdeaProjects/Draw_Together/src/img/picture",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "库",
+    "project.structure.last.edited": "工件",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -65,6 +94,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img/picture" />
+      <recent name="$PROJECT_DIR$/src/img/icon" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
@@ -101,8 +132,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660021068361</updated>
-      <workItem from="1660021070666" duration="14603000" />
+      <workItem from="1660021070666" duration="21795000" />
+      <workItem from="1660100944094" duration="12016000" />
+      <workItem from="1660183941942" duration="17100000" />
     </task>
+    <task id="LOCAL-00001" summary="null">
+      <created>1660044468131</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660044468131</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,5 +159,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="null" />
+    <option name="LAST_COMMIT_MESSAGE" value="null" />
   </component>
 </project>
