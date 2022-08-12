@@ -33,6 +33,7 @@ import java.awt.Image;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.Cursor;
+import javax.swing.ImageIcon;
 
 /**
  * 画图主窗体
@@ -102,20 +103,30 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
 
         toolBar = new JToolBar();               //初始化工具栏
         getContentPane().add(toolBar,BorderLayout.NORTH);//工具栏添加到窗体最上边的位置
-        showPicButton = new JButton("展开简笔画");// 初始化按钮对象，并添加文本内容
+        showPicButton = new JButton();          // 初始化按钮对象，并添加文本内容
+        showPicButton.setToolTipText("展开简笔画");//设置按钮鼠标悬停提示
+        showPicButton.setIcon(new ImageIcon("src/img/icon/展开.png"));//设置按钮图标
         toolBar.add(showPicButton);             // 工具栏添加按钮
-        saveButton = new JButton("保存");   //初始化按钮对象，并添加文本内容
+        saveButton = new JButton();             //初始化按钮对象，并添加文本内容
+        saveButton.setToolTipText("保存");       //设置按钮鼠标悬停提示
+        saveButton.setIcon(new ImageIcon("src/img/icon/保存.png"));//设置按钮图标
         toolBar.add(saveButton);                //工具栏添加按钮
         toolBar.addSeparator();                 //添加分割条
         //初始化按钮对象并添加文本内容
-        strokeButton1 = new JToggleButton("细线");
+        strokeButton1 = new JToggleButton();
+        strokeButton1.setToolTipText("细线");     //设置按钮鼠标悬停提示
+        strokeButton1.setIcon(new ImageIcon("src/img/icon/1像素线条.png"));//设置按钮图标
         strokeButton1.setSelected(true);        //细线按钮处于被选中状态
         toolBar.add(strokeButton1);             //工具栏添加按钮
         //初始化按钮对象并添加文本内容
-        strokeButton2 = new JToggleButton("粗线");
+        strokeButton2 = new JToggleButton();
+        strokeButton2.setToolTipText("粗线");     //设置按钮鼠标悬停提示
+        strokeButton2.setIcon(new ImageIcon("src/img/icon/2像素线条.png"));//设置按钮图标
         toolBar.add(strokeButton2);
         //初始化按钮对象并添加文本内容
-        strokeButton3 = new JToggleButton("较粗");
+        strokeButton3 = new JToggleButton();
+        strokeButton3.setToolTipText("加粗");     //设置按钮鼠标悬停提示
+        strokeButton3.setIcon(new ImageIcon("src/img/icon/4像素线条.png"));//设置按钮图标
         //画笔粗细按钮组，保证同时只有一个按钮被选中
         ButtonGroup strokeGroup = new ButtonGroup();
         strokeGroup.add(strokeButton1);         //按钮组添加按钮
@@ -123,16 +134,26 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
         strokeGroup.add(strokeButton3);         //按钮组添加按钮
         toolBar.add(strokeButton3);             //工具栏添加按钮
         toolBar.addSeparator();                 //添加分割
-        backgroundButton = new JButton("背景颜色");//初始化按钮对象，并添加文本内容
+        backgroundButton = new JButton();       //初始化按钮对象，并添加文本内容
+        backgroundButton.setToolTipText("背景颜色");//设置按钮鼠标悬停提示
+        backgroundButton.setIcon(new ImageIcon("src/img/icon/背景色.png"));//设置按钮图标
         toolBar.add(backgroundButton);          //工具栏添加按钮
-        foregroundButton = new JButton("前景颜色");//初始化按钮对象，并添加文本内容
+        foregroundButton = new JButton();       //初始化按钮对象，并添加文本内容
+        foregroundButton.setToolTipText("前景颜色");//设置按钮鼠标悬停提示
+        foregroundButton.setIcon(new ImageIcon("src/img/icon/前景色.png"));//设置按钮图标
         toolBar.add(foregroundButton);          //工具栏添加按钮
         toolBar.addSeparator();                 //添加分割条
-        shapeButton = new JButton("图形");  //初始化按钮对象，并添加文本内容
+        shapeButton = new JButton();            //初始化按钮对象，并添加文本内容
+        shapeButton.setToolTipText("图形");      //设置按钮鼠标悬停提示
+        shapeButton.setIcon(new ImageIcon("src/img/icon/形状.png"));//设置按钮图标
         toolBar.add(shapeButton);               //工具栏添加按钮
-        clearButton = new JButton("清 除"); //初始化按钮对象，并添加文本内容
+        clearButton = new JButton();            //初始化按钮对象，并添加文本内容
+        clearButton.setToolTipText("清除");      //设置按钮鼠标悬停提示
+        clearButton.setIcon(new ImageIcon("src/img/icon/清除.png"));//设置按钮图标
         toolBar.add(clearButton);               //工具栏添加按钮
-        eraserButton = new JButton("橡皮"); //初始化按钮对象，并添加文本内容
+        eraserButton = new JButton();           //初始化按钮对象，并添加文本内容
+        eraserButton.setToolTipText("橡皮");
+        eraserButton.setIcon(new ImageIcon("src/img/icon/橡皮.png"));//设置按钮图标
         toolBar.add(eraserButton);              //工具栏添加按钮
 
         JMenuBar menuBar = new JMenuBar();      //创建菜单栏
@@ -337,8 +358,8 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
                 {
                     foreColor = fColor;//将选中的颜色赋给前景色变量
                 }
-                //前景色按钮的文字也更换为这种颜色
-                foregroundButton.setForeground(foreColor);
+                //前景色按钮的背景色也更换为这种颜色
+                foregroundButton.setBackground(foreColor);
                 g.setColor(foreColor);  //绘图工具使用前景色
             } //actionPerformed()结束
         }); //foregroundButton.addActionListener()结束
@@ -361,16 +382,23 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
             public void actionPerformed(final ActionEvent arg0) //单击时
             {
                 //单击工具栏上的橡皮按钮，使用橡皮
-                if (eraserButton.getText().equals("橡皮"))
+                if (rubber)// 如果菜单的文字内容为“橡皮”
                 {
-                    rubber = true;          //设置橡皮标识为true
-                    eraserButton.setText("画图");//改变按钮上显示文本为画图
+                    eraserButton.setToolTipText("橡皮");// 设置按钮鼠标悬停提示
+                    // 设置按钮图标
+                    eraserButton.setIcon(new ImageIcon("src/img/icon/橡皮.png"));
+                    eraserMenuItem.setText("橡皮"); // 改变菜单上显示的文本为橡皮
+                    g.setColor(foreColor);// 设置绘图对象的前景色
+                    rubber = false;// 橡皮标识变量设为false，表示当前使用画笔
                 }
                 else    //单击工具栏上的画图按钮，使用画笔
                 {
-                    rubber = false;         //设置橡皮标识为false
-                    eraserButton.setText("橡皮");//改变按钮上显示文本为橡皮
-                    g.setColor(foreColor);//设置绘图对象的前景色
+                    eraserMenuItem.setText("画图");// 改变菜单上显示的文本为画图
+                    eraserButton.setToolTipText("画图");// 设置按钮鼠标悬停提示
+                    // 设置按钮图标
+                    eraserButton.setIcon(new ImageIcon("src/img/icon/画笔.png"));
+                    g.setColor(backgroundColor);// 设置绘图对象的前景色
+                    rubber = true;// 橡皮标识变量设为true，表示当前使用橡皮
                 }//else结束
             }//actionPerformed结束
         });//eraserButton.addActionListener()结束
@@ -420,19 +448,24 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
             @Override
             public void actionPerformed(final ActionEvent e)    // 单击时
             {
-                if (eraserMenuItem.getText().equals("橡皮"))      // 如果菜单的文字内容为“橡皮”
+                if (rubber)// 如果菜单的文字内容为“橡皮”
                 {
-                    rubber = true;                              // 设置橡皮标识为true
-                    eraserMenuItem.setText("画图");// 改变菜单上显示的文本为画图
-                    eraserButton.setText("画图");  // 改变按钮上显示的文本为画图
-                }
-                else// 单击工具栏上的画图按钮，使用画笔
-                {
-                    rubber = false;// 设置橡皮标识为false
-                    eraserMenuItem.setText("橡皮");//改变菜单上显示的文本为“橡皮”
-                    eraserButton.setText("橡皮");// 改变按钮上显示的文本为“橡皮”
+                    eraserButton.setToolTipText("橡皮");// 设置按钮鼠标悬停提示
+                    // 设置按钮图标
+                    eraserButton.setIcon(new ImageIcon("src/img/icon/橡皮.png"));
+                    eraserMenuItem.setText("橡皮"); // 改变菜单上显示的文本为橡皮
                     g.setColor(foreColor);// 设置绘图对象的前景色
+                    rubber = false;// 橡皮标识变量设为false，表示当前使用画笔
                 }
+                else    //单击工具栏上的画图按钮，使用画笔
+                {
+                    eraserMenuItem.setText("画图");// 改变菜单上显示的文本为画图
+                    eraserButton.setToolTipText("画图");// 设置按钮鼠标悬停提示
+                    // 设置按钮图标
+                    eraserButton.setIcon(new ImageIcon("src/img/icon/画笔.png"));
+                    g.setColor(backgroundColor);// 设置绘图对象的前景色
+                    rubber = true;// 橡皮标识变量设为true，表示当前使用橡皮
+                }//else结束
             }// actionPerformed()结束
         });// eraserMenuItem.addActionListener()结束
 
@@ -495,7 +528,7 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
                 {
                     foreColor = fColor;// 将选中的颜色赋给前景色变量
                 }// if结束
-                foregroundButton.setForeground(foreColor);// 前景色按钮的文字也更换为这种颜色
+                foregroundButton.setBackground(foreColor);// 前景色按钮的背景也更换为这种颜色
                 g.setColor(foreColor);// 绘图工具使用前景色
             }// actionPerformed()结束
         });// foregroundMenuItem.addActionListener()结束
@@ -556,12 +589,14 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
                 boolean isVisible = picWindow.isVisible();// 获取简笔画展示窗体可见状态
                 if (isVisible)// 获取简笔画展示窗体可见状态
                 {
-                    showPicButton.setText("展开简笔画");// 修改按钮的文本
+                    showPicButton.setToolTipText("展开简笔画");// 修改按钮的文本
+                    showPicButton.setIcon(new ImageIcon("src/img/icon/展开.png"));//设置按钮图标
                     picWindow.setVisible(false);// 隐藏简笔画展示窗体
                 }
                 else// 如果是隐藏的
                 {
-                    showPicButton.setText("隐藏简笔画");// 修改按钮的文本
+                    showPicButton.setToolTipText("隐藏简笔画");// 修改按钮的文本
+                    showPicButton.setIcon(new ImageIcon("src/img/icon/隐藏.png"));//设置按钮图标
                     // 重新指定简笔画展示窗体的显示位置
                     // 横坐标 = 主窗体横坐标 - 简笔画窗体宽度 - 5
                     // 纵坐标 = 主窗体纵坐标
@@ -577,7 +612,8 @@ public class DrawPictureFrame extends JFrame implements FrameGetShape //继承�
      */
     public void initShowPicButton()
     {
-        showPicButton.setText("展开简笔画");// 修改按钮的文本
+        showPicButton.setToolTipText("展开简笔画");// 修改按钮的文本
+        showPicButton.setIcon(new ImageIcon("src/img/icon/展开.png"));//设置按钮图标
     }//initShowPicButton()结束
     /**
      * 添加水印
